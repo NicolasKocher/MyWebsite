@@ -6,13 +6,28 @@ h1 {
   font-size: 30px;
   color: white;
   background-image: linear-gradient(90deg, #4d78ef, #709df7, #7ed4fd);
-  font-weight: bold;
+  font-weight: bdold;
   text-align: center;
   display: inline-block;
   align-items: center;
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+}
+.introduction-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* center vertically */
+  justify-content: center; /* center horizontally */
+}
+.introduction-text {
+  padding: 12px;
+  display: inline-block;
+}
+
+.developer-img {
+  width: 400px;
+  height: auto;
 }
 body {
   font-family: 'Roboto', sans-serif;
