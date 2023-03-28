@@ -209,8 +209,18 @@ img:hover {
   fill: #209961;
 }
 
-.youtube-box {
-  
+.first-project-box {
+  width: 700px;
+  background-color: white;
+  border-radius: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.first-project-text {
+  color: #209961;
+  font-size: 20px;
 }
 
 
