@@ -28,7 +28,33 @@ h1 {
   font-size: 100px;
   display: inline-block;
   font-family: 'Special Elite', cursive;
+
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  /*border-right: 5px solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 4s steps(40, end),
+    blink-caret .75s step-end infinite;
 }
+.typing-text {
+    width: 0;
+    animation: typing 4s steps(40, end), blink-caret .75s step-end infinite;
+    display: inline-block;
+  }
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #209961; }
+}
+
 
 header {
   padding-left: 40px;
@@ -48,9 +74,10 @@ header {
 
 .header.scrolled {
   /* Add new border style and color */
-  background-color: rgba(40, 167, 153, 1.0);
+  background-color: #80ddbea8;
   border-radius: 25px;
   padding-bottom: 18px;
+  transition: background-color 0.5s ease-in-out;
 }
 
 nav {
@@ -97,17 +124,24 @@ a:hover {
   vertical-align: middle;
   margin-top: -10px;
   overflow: hidden;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  position: relative;
+  top: 170px;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .me-img {
   position: relative;
-  /*border: 3px solid white;*/
   border-radius: 50%;
   width: 400px; 
   height: 400px; 
   object-fit: cover; 
   vertical-align: middle;
-  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6);
 }
 img {
   --m:
@@ -127,15 +161,31 @@ img:hover {
   filter: grayscale(0);
 }
 
+.me-box:hover + .study-box {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.study-box {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  /*background-color: #000;*/
+}
 
 .study-box {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  opacity: 0;
+  text-align: center;
+  margin-bottom: 50px;
 }
 .study-text {
-  font-size: 20px;
+  font-size: 25px;
   color: #a9dbca;
+  margin-top: 0;
+  margin-bottom: 3px;
 }
 
 .custom-shape-divider-bottom-1679941662 {
@@ -157,6 +207,10 @@ img:hover {
 
 .custom-shape-divider-bottom-1679941662 .shape-fill {
   fill: #209961;
+}
+
+.youtube-box {
+  
 }
 
 
