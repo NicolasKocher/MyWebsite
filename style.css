@@ -217,6 +217,7 @@ img:hover {
 }
 .icon {
   color: white;
+  background-color: transparent;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -241,5 +242,8 @@ img:hover {
   line-height: 1.5;
 }
 
+a {
+  text-decoration: none;
+}
 
 
