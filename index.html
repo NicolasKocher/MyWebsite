@@ -97,21 +97,31 @@
     </div>
     
     <section id="contact">
-      <h2>Contact</h2>
-      <form action="mailto:nicokocher1999@gmail.com" method="post" enctype="text/plain">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-        
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
-        
-        <button type="submit">Submit</button>
-    </form>
-    
+      <div class="container">
+        <form onsubmit="sendEmail(); reset(); return false;">
+          <h3>GET IN TOUCH</h3>
+          <input type="text" id="name" placeholder="Your Name" required>
+          <input type="email" id="email" placeholder="E-Mail" required>
+          <textarea id="message"  rows="4" placeholder="Message"></textarea>
+          <button type="submit">
+            Send
+          </button>
+        </form>        
+      </div>
+
     </section>
+    
+    <!-- 
+    <section id="contact">
+      <h2>Contact</h2>
+      <form action="https://formsubmit.co/nicokocher1999@gmail.com" method="post" enctype="text/plain">
+      <input type="text" name="name" required placeholder="name">
+      <input type="email" name="email" placeholder="Email Address">
+      <input type="text" name="message" placeholder="message">
+      <button type="submit">Send</button>
+    </form>
+    </section>
+    -->
 
     <div class="custom-shape-divider-bottom-1679941662">
       <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -121,5 +131,6 @@
 
     <!-- Link to JavaScript file -->
     <script src="index.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
   </body>
 </html> 

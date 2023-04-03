@@ -7,3 +7,18 @@ window.addEventListener('scroll', function() {
     header.classList.remove('scrolled');
   }
 });
+
+function sendEmail() {
+  Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "nicokocher1999",
+    Password : "hellschwarz99",
+    To : 'nicokocher1999@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : "New Contact Form Enquiry",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+
+}
