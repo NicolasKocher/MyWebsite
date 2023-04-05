@@ -95,39 +95,67 @@
         </p>
       </div>
     </div>
-    
+
     <section id="contact">
-      <div class="container">
-        <form onsubmit="sendEmail(); reset(); return false;">
-          <h3>GET IN TOUCH</h3>
-          <input type="text" id="name" placeholder="Your Name" required>
-          <input type="email" id="email" placeholder="E-Mail" required>
-          <textarea id="message"  rows="4" placeholder="Message"></textarea>
-          <button type="submit">
-            Send
-          </button>
-        </form>        
+      <h1>Contact me if you like</h1>
+      <div class="form-box">
+        <form action="https://formsubmit.co/nicokocher1999@gmail.com" class="tm-contact-form" method="POST">
+          <div class="name-box">
+            <input
+              type="text"
+              id="contact_name"
+              name="contact_name"
+              class="form-control"
+              placeholder="Name"
+              required
+            />
+          </div>
+          <div class="email-box">
+            <input
+              type="email"
+              id="contact_email"
+              name="contact_email"
+              class="form-control"
+              placeholder="Email"
+              required
+            />
+          </div>
+          <div class="message-box">
+            <textarea
+              rows="6"
+              id="contact_message"
+              name="contact_message"
+              class="form-control"
+              placeholder="Nachricht"
+              required
+            ></textarea>
+          </div>
+          <div class="tm-text-right">
+            <button type="submit" class="send-button">
+              Senden
+            </button>
+          </div>
+        </form>
       </div>
-
     </section>
     
-    <!-- 
-    <section id="contact">
-      <h2>Contact</h2>
-      <form action="https://formsubmit.co/nicokocher1999@gmail.com" method="post" enctype="text/plain">
-      <input type="text" name="name" required placeholder="name">
-      <input type="email" name="email" placeholder="Email Address">
-      <input type="text" name="message" placeholder="message">
-      <button type="submit">Send</button>
-    </form>
-    </section>
-    -->
-
+    <div class="icons">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="70" height="70" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path>
+        <path d="M8 11l0 5"></path>
+        <path d="M8 8l0 .01"></path>
+        <path d="M12 16l0 -5"></path>
+        <path d="M16 16v-3a2 2 0 0 0 -4 0"></path>
+     </svg>
+    </div>
+    
     <div class="custom-shape-divider-bottom-1679941662">
       <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
           <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
       </svg>
     </div>
+    
 
     <!-- Link to JavaScript file -->
     <script src="index.js"></script>
