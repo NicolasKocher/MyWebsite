@@ -141,7 +141,7 @@ a:hover {
   vertical-align: middle;
   box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6);
 }
-img {
+img, me-img {
   --m:
     radial-gradient(circle farthest-side at right,#000 99%,#0000) 
       0 100%/46% 92% no-repeat,
@@ -186,33 +186,20 @@ img:hover {
   margin-bottom: 3px;
 }
 
-.custom-shape-divider-bottom-1679941662 {
-  position: absolute;
-  bottom: -2000px;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom-1679941662 svg {
-  position: relative;
-  display: block;
-  width: calc(114% + 1.3px);
-  height: 248px;
-}
-
-.custom-shape-divider-bottom-1679941662 .shape-fill {
-  fill: #209961;
-}
-
 .youtube-box {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 60px;
   margin-bottom: 70px;
+}
+.a-youtube a:hover{
+  background-color: transparent;
+  text-decoration: none;
+}
+.youtube-box a:hover {
+  background-color: transparent;
+  text-decoration: none;
 }
 .icon {
   color: white;
@@ -251,6 +238,7 @@ a {
   justify-content: center;
   align-items: center;
   padding-top: 20px;
+  margin-bottom: 50px;
 }
 
 .tm-contact-form {
@@ -299,4 +287,8 @@ form button {
 
 .icons {
   z-index: 100;
+}
+.icons a:hover {
+  text-decoration: none;
+  background-color: transparent;
 }
