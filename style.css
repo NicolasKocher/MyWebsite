@@ -54,6 +54,34 @@ h1 {
   50% { border-color: #209961; }
 }
 
+/* ab hier */
+.line-1,
+.line-2,
+.line-3 {
+  width: 0;
+  overflow: hidden;
+  display: inline-block;
+  animation: appear 1s linear forwards;
+}
+
+.line-2 {
+  animation-delay: 1.5s;
+}
+
+.line-3 {
+  animation-delay: 2.5s;
+}
+
+@keyframes appear {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+/* bis hier */
+
 header {
   padding-left: 40px;
   padding-right: 0px;
